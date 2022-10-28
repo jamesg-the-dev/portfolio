@@ -1,0 +1,38 @@
+@import '../../styles/variables';
+nav {
+  padding: 2rem;
+  a {
+    color: $dark-gray;
+    text-decoration: none;
+    position: relative;
+    transition: all 250ms;
+    &::before {
+      content: "";
+      width: 0;
+      position: absolute;
+      background: $dark-gray;
+      bottom: -1px;
+      height: 2px;
+      transition: all 250ms;
+    }
+    &:hover {
+      // font-weight: 700;
+      &::before {
+        width: 100%;
+      }
+    }
+    &.active {
+      font-weight: 700;
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+}
+.navlinks {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  max-width: 550px;
+  margin-inline: auto;
+}

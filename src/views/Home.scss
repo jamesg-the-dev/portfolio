@@ -1,0 +1,41 @@
+@import '../styles/variables';
+.home {
+  display: flex;
+  height: 720px;
+  &__landing-feature {
+    position: absolute;
+    top: -5.2rem;
+    width: 100%;
+    z-index: -1;
+  }
+
+  &__title {
+    transform: translate(20%, 50%);
+    @media (min-width: 900px) {
+      font-size: clamp(1.3rem, 75vw, 4rem);
+      max-width: 500px;
+      line-height: 1.4;
+    };
+  }
+
+  &__landing-feature-hold {
+    position: relative;
+    width: 40%;
+  }
+}
+
+.languages {
+  padding: 2em 0;
+  background-color: $dark-blue;
+  max-height: 180px;
+  img {
+    margin-inline: auto;
+  }
+}
+
+.slick-slide img{
+  filter: opacity(.5);
+}
+.slick-active.slick-current img {
+  filter: opacity(1);
+}
