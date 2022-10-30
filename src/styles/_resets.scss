@@ -6,5 +6,9 @@ ul {
 }
 
 * {
-  color: $dark-gray
+  color: inherit;
+}
+
+p {
+  margin: 0;
 }

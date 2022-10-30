@@ -1,0 +1,38 @@
+@import '../../styles/variables';
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer {
+  padding: 1.4rem;
+  background-color: $dark-blue;
+  min-height: 300px;
+  color: #FFFFFF;
+  @extend %flex-center;
+}
+
+.footer {
+  &__container {
+    max-width: 850px;
+    margin-inline: auto;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__socials {
+    @extend %flex-center;
+    gap: 4rem;
+    flex-wrap: wrap
+  }
+
+  &__social-hold {
+    @extend %flex-center;
+    gap: .6rem;
+  }
+}

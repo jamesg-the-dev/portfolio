@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.scss';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import About from './views/About';
 import Home from './views/Home';
@@ -15,6 +16,7 @@ function App() {
         <Route path='/about' element={<About/>}></Route>
         <Route path='/portfolio' element={<Portfolio/>}></Route>
       </Routes>
+      <Footer/>
     </div>
   );
 }

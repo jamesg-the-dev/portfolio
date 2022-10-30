@@ -13,8 +13,9 @@
     transform: translate(20%, 50%);
     @media (min-width: 900px) {
       font-size: clamp(1.3rem, 75vw, 4rem);
-      max-width: 500px;
+      max-width: 530px;
       line-height: 1.4;
+      min-height: 300px;
     };
   }
 
@@ -22,20 +23,28 @@
     position: relative;
     width: 40%;
   }
+
+  &__split {
+    flex: 1;
+  }
 }
 
 .languages {
   padding: 2em 0;
   background-color: $dark-blue;
-  max-height: 180px;
+  min-height: 180px;
+  max-height: 700px;
+  transition: max-height 400ms ease;
   img {
     margin-inline: auto;
   }
 }
 
-.slick-slide img{
-  filter: opacity(.5);
+.slick-slide .language {
+  opacity: .5;
+  cursor: pointer;
+  transition: opacity 400ms;
 }
-.slick-active.slick-current img {
-  filter: opacity(1);
+.slick-active.slick-current .language {
+  opacity: 1;
 }

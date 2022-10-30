@@ -3,9 +3,14 @@
 @import "~slick-carousel/slick/slick.css"; 
 @import "~slick-carousel/slick/slick-theme.css";
 @import './styles/resets';
+@import './styles/variables';
+:root {
+  --dark-gray: #{$canvas-black};
+}
 body {
   margin: 0;
   font-family: 'Ubuntu', sans-serif;
+  color: $dark-gray;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
